@@ -12,7 +12,8 @@
 
         <script>
 
-          // Données 1
+        // Données 1
+        // Exercice 1 
 
             const bernardWeight = 78;
             const bernardHeight = 1.69;
@@ -24,9 +25,45 @@
             const marcelIMC = marcelWeight / (marcelHeight * marcelHeight);
 
             const bernardHigherIMC = bernardIMC > marcelIMC;
-            console.log(bernardHigherIMC);
+                console.log(bernardHigherIMC);
 
-          // Données 2
+        // Exercice 2
+
+            if (bernardHigherIMC) {
+                console.log(`Bernard a un IMC (${bernardIMC.toFixed(1)}) plus élevé que Marcel (${marcelIMC.toFixed(1)})`)
+            } else { 
+                console.log(`Marcel a un IMC (${marcelIMC.toFixed(1)}) plus élevé que Bernard (${bernardIMC.toFixed(1)})`)
+            }
+
+        // Exercice 3 
+        // Dans le tableau NIVEA, pour un homme de 35 - 44 ans
+
+            if (bernardIMC < 22) {
+                console.log("Bernard : insuffisance pondérale");
+            } else if (bernardIMC < 27) {
+                console.log("Bernard : poids normal");
+            } else if (bernardIMC < 32) {
+                console.log("Bernard : surpoids");
+            } else if (bernardIMC < 42) {
+                console.log("Bernard : obésité");
+            } else {
+                console.log("Bernard : obésité sévère");
+            } 
+
+            if (marcelIMC < 22) {
+                console.log("Marcel : insuffisance pondérale");
+            } else if (marcelIMC < 27) {
+                console.log("Marcel : poids normal");
+            } else if (marcelIMC < 32) {
+                console.log("Marcel : surpoids");
+            } else if (marcelIMC < 42) {
+                console.log("Marcel : obésité");
+            } else {
+                console.log("Marcel : obésité sévère");
+            } 
+
+        // Données 2
+        // Exercice 1
 
             const bernardWeight2 = 95;
             const bernardHeight2 = 1.88;
@@ -38,13 +75,42 @@
             const marcelIMC2 = marcelWeight2 / (marcelHeight2 * marcelHeight2);   
 
             const bernardHigherIMC2 = bernardIMC2 > marcelIMC2;
-            console.log(bernardHigherIMC2);
+                console.log(bernardHigherIMC2);
 
-                if (bernardIMC > marcelIMC) {
-                    console.log(`Bernard a un IMC (${bernardIMC}) plus élevé que Marcel (${marcelIMC})`)
-                } else { 
-                    console.log(`Marcel a un IMC (${marcelIMC}) plus élevé que Bernard (${bernardIMC})`)
-                }
+        // Exercice 2  
+
+            if (bernardHigherIMC2) {
+                console.log(`Bernard a un IMC (${bernardIMC2.toFixed(1)}) plus élevé que Marcel (${marcelIMC2.toFixed(1)})`)
+            } else { 
+                console.log(`Marcel a un IMC (${marcelIMC2.toFixed(1)}) plus élevé que Bernard (${bernardIMC2.toFixed(1)})`)
+            }
+
+        // Exercice 3
+
+        
+            if (bernardIMC2 < 22) {
+                console.log("Bernard : insuffisance pondérale");
+            } else if (bernardIMC2 < 27) {
+                console.log("Bernard : poids normal");
+            } else if (bernardIMC2 < 32) {
+                console.log("Bernard : surpoids");
+            } else if (bernardIMC2 < 42) {
+                console.log("Bernard : obésité");
+            } else {
+                console.log("Bernard : obésité sévère");
+            } 
+
+            if (marcelIMC2 < 22) {
+                console.log("Marcel : insuffisance pondérale");
+            } else if (marcelIMC2 < 27) {
+                console.log("Marcel : poids normal");
+            } else if (marcelIMC2 < 32) {
+                console.log("Marcel : surpoids");
+            } else if (marcelIMC2 < 42) {
+                console.log("Marcel : obésité");
+            } else {
+                console.log("Marcel : obésité sévère");
+            } 
 
                 
         </script>
