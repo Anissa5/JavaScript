@@ -1,0 +1,45 @@
+<script>
+
+// Donnée 1
+
+const dolphins = [44, 23, 71];
+const koalas = [65, 54, 49];
+
+const calcAverage = (score1, score2, score3) =>
+    (score1 + score2 + score3) / 3;
+
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+    console.log("Moyenne Dauphins :", scoreDolphins);
+    console.log("Moyenne Koalas :", scoreKoalas);
+
+const checkWinner = function ( averageDolphins, averageKoalas) {
+
+    if (averageDolphins >= averageKoalas * 2) {
+        console.log(`Les Dauphins gagnent (${averageDolphins} vs ${averageKoalas})`);
+
+    } else if ( averageKoalas >= averageDolphins * 2) {
+        console.log(`Les Koalas gagnent (${averageKoalas} vs ${averageDolphins})`);
+    }
+};
+
+checkWinner (scoreDolphins, scoreKoalas);
+
+// Donnée 2
+
+const dolphins2 = [85, 54, 41];
+const koalas2 = [23, 34, 27];
+
+const calcAverage2 = (score1, score2, score3) =>
+    (score1 + score2 + score3) / 3;
+
+const scoreDolphins2 = calcAverage2(85, 54, 41);
+const scoreKoalas2 = calcAverage2(23, 34, 27);
+
+    console.log("Moyenne Dauphins :", scoreDolphins2);
+    console.log("Moyenne Koalas2 :", scoreKoalas2);
+
+checkWinner (scoreDolphins2, scoreKoalas2);
+
+</script>
