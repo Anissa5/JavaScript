@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=""fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Exercice JavaScript</title>
+
+    </head>
+
+    <body>
+
+        <script>
+            let username = prompt("Quel est votre nom ?");
+
+            username = username.toLowerCase();     
+            
+                if (username === "paul" || username === "ringo" || username === "john") {
+                    let password = prompt("Quel est votre mot de passe ?");
+
+                    if (username === "paul" && password === "Paul1234") {
+                        console.log(`Bienvenue ${username} !`);
+
+                    } else if (username === "ringo" && password === "Ringo458") {
+                        console.log(`Bienvenue ${username} !`);
+
+                    } else if (username === "john" && password === "John692") {
+                        console.log(`Bienvenue ${username} !`);
+                    } else {
+                        console.log("Wrong password");
+                    }
+                
+                } else {
+                    console.log("Wrong username");
+                }
+
+        </script>
+
+    </body>
+
+</html>

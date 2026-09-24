@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Challenge 3 JavaScript</title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+          // Données 1
+
+            const bernardWeight = 78;
+            const bernardHeight = 1.69;
+
+            const marcelWeight = 92;
+            const marcelHeight = 1.95;
+
+            const bernardIMC = bernardWeight / (bernardHeight * bernardHeight);
+            const marcelIMC = marcelWeight / (marcelHeight * marcelHeight);
+
+            const bernardHigherIMC = bernardIMC > marcelIMC;
+            console.log(bernardHigherIMC);
+
+          // Données 2
+
+            const bernardWeight2 = 95;
+            const bernardHeight2 = 1.88;
+
+            const marcelWeight2 = 85;
+            const marcelHeight2 = 1.76;
+
+            const bernardIMC2 = bernardWeight2 / (bernardHeight2 * bernardHeight2);
+            const marcelIMC2 = marcelWeight2 / (marcelHeight2 * marcelHeight2);   
+
+            const bernardHigherIMC2 = bernardIMC2 > marcelIMC2;
+            console.log(bernardHigherIMC2);
+
+                if (bernardIMC > marcelIMC) {
+                    console.log(`Bernard a un IMC (${bernardIMC}) plus élevé que Marcel (${marcelIMC})`)
+                } else { 
+                    console.log(`Marcel a un IMC (${marcelIMC}) plus élevé que Bernard (${bernardIMC})`)
+                }
+
+                
+        </script>
+
+    </body>
+
+</html>

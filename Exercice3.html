@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=""fr">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Exercice 3 JavaScript</title>
+
+    </head>
+
+    <body>
+
+        <script>
+            
+            function sum(x) {
+
+                let somme = 0;
+
+                    for (let i = 1; i <= x; i++) {
+                    somme += i;
+                    }
+                    
+                    console.log(somme);
+            }
+
+            sum(5);
+
+            function age(userage) {
+
+                if (userage < 18) {
+                    console.log("mineur")
+                } else if (userage >= 18) {
+                    console.log("majeur")
+                }
+            }
+
+            age(27);
+
+            function plus(x) {
+
+                if (x === 1) {
+                    return 1;
+                }
+                    return x + plus(x - 1);
+                }
+
+                    console.log(plus(11));
+
+        </script>
+
+    </body>
+
+</html>
