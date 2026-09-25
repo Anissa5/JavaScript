@@ -31,5 +31,23 @@ do {
     ii++;
 }while (i < 5);
 
+// Exercice Cours de Michel
+
+const myData = {
+    firstName: 'Michel',
+    lastName: 'Vidailhet',
+    job: 'Développeur',
+    birthyear: 1986,
+    subjects: ['Javascript', 'Angular', 'CSS', 'HTML'],
+};
+        console.log(`${myData.firstName} connait ${myData.subjects.length} sujets et son sujet préféré est le ${myData.subjects[0]}.`);
+
+    // BONUS
+
+    function describeData(data) {
+        return `${myData.firstName} connait ${myData.subjects.length} sujets et son sujet préféré est le ${myData.subjects[0]}.`
+    }
+        console.log(describeData(myData));
+
 
 </script>
