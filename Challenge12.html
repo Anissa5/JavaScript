@@ -1,0 +1,25 @@
+<script>
+
+const temperatures = [12, 5, -5, 0, 4];
+
+function printForecast(temperatures) {
+    for (let i = 0; i < temperatures.length; i++) {
+        const jour = i + 1;
+        const textJour = jour === 1 ? 'jour' : 'jours';
+
+
+        console.log(`${temperatures[i]} degrès dans ${jour} ${textJour}`);
+    }
+}
+
+// Donnée de test 1
+
+    printForecast([17, 21, 23]);
+
+// Donnée de test 2
+
+    printForecast([12, 5, -5, 0, 4]);
+
+
+
+</script>
