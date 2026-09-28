@@ -1,0 +1,41 @@
+<script>
+
+const bernard = {
+    firstname: 'Bernard',
+    weight: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.bmi = (this.weight / (this.height * this.height)).toFixed(1);
+        return this.bmi;
+    }
+};
+
+const marcel = {
+    firstname: 'Marcel',
+    weight: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.bmi = (this.weight / (this.height * this.height)).toFixed(1);
+        return this.bmi;
+    },
+};
+
+    console.log(bernard.calcBMI());
+    console.log(marcel.calcBMI());
+
+    if ( bernard.bmi > marcel.bmi) {
+        console.log(`L'IMC de ${bernard.firstname} (${bernard.bmi}) est plus élevé que celui de ${marcel.firstname} (${marcel.bmi})`);
+    } else {
+        console.log(`L'IMC de ${marcel.firstname} (${marcel.bmi}) est plus élevé que celui de ${bernard.firstname} (${bernard.bmi})`);
+    }
+
+
+
+
+
+
+
+
+</script>
