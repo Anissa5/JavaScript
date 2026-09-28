@@ -50,4 +50,137 @@ const myData = {
         console.log(describeData(myData));
 
 
+// Challenge : equipes de foot
+
+const game = {
+ team1: 'Bayern Munich',
+ team2: 'Borrussia Dortmund',
+ players: [
+   [
+     'Neuer','Pavard','Martinez','Alaba','Davies',
+     'Kimmich',
+     'Goretzka',
+     'Coman',
+     'Muller',
+     'Gnarby',
+     'Lewandowski',
+   ],
+   [
+     'Burki','Schulz','Hummels','Akanji','Hakimi',
+     'Weigl',
+     'Witsel',
+     'Hazard',
+     'Brandt',
+     'Sancho',
+     'Gotze',
+   ],
+ ],
+ score: '4:0',
+ scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+ date: 'Nov 9th, 2037',
+ odds: {
+   team1: 1.33,
+   x: 3.25,
+   team2: 6.5,
+ },
+};
+
+     for (let i = 0; i < game.scored.length; i++) {
+        console.log(`But ${i + 1} : ${game.scored[i]}`);
+    }
+
+let total = 0;
+
+    for (const odd of Object.values(game.odds)) {
+        total += odd;
+    }
+
+const moyenne = total / Object.values(game.odds).length;
+    console.log(moyenne);
+
+console.log(`La propabilité moyenne est de ${moyenne}`);
+
+    for (const [team, odd] of Object.entries(game.odds)) {
+        console.log(`Propabilité de ${team} : ${odd}`);
+    }
+
+const teams = [game.team1, game.team2];
+    console.log(`Propabilité de victoire de ${game.team1} : ${game.odds.team1}`);
+    console.log(`Propabilité d'égalité : ${game.odds.x}`);
+    console.log(`Propabilité de victoire de ${game.team2} : ${game.odds.team2}`);
+
+const scorers = {};
+
+    for (const player of game.scored) {
+        if (scorers[player]) {
+            scorers[player]++;
+        } else {
+            scorers[player] = 1;
+        }
+    }
+        console.log(scorers);
+
+// Exercice cours de Michel 2
+
+const myData2 = {
+ firstName: 'Michel',
+ lastName: 'Vidailhet',
+ job: 'Développeur',
+ birthYear: 1986,
+ hasDriveLicense: false,
+
+    calcAge: function () {
+        if (!this.age) {
+            this.age = 2021 - this.birthYear
+        }
+            return this.age;
+    },
+
+    getSummary: function() {
+        const age = this.calcAge();
+
+        if (this.hasDriveLicense) {
+            return `${this.firstName} a ${age} ans et il a le permis.`;
+        } else {
+            return `${this.firstName} a ${age} ans et il n'a pas le permis.`;
+        }
+    },
+};
+
+    console.log(myData2.getSummary());
+
+// Challenge 11 du cours de Michel
+
+const calcIMC = function () {
+        return this.weight / (this.height * this.height);
+    };
+
+
+const mitch = {
+    name: 'Mitch',
+    weight: 63,
+    height: 1.74,
+    calcIMC: calcIMC,
+};
+
+const cyp = {
+    name: 'Cyprien',
+    weight: 85,
+    height: 1.85,
+    calcIMC: calcIMC,
+};
+
+    console.log(mitch.calcIMC());
+    console.log(cyp.calcIMC());
+
+    if (cyp.calcIMC() > mitch.calcIMC()) {
+        console.log(
+            `L'IMC de ${cyp.name} (${cyp.calcIMC()}) est plus grand que celui de ${mitch.name} (${mitch.calcIMC()}).`
+        );
+    }
+
+    
+
+
+
 </script>
